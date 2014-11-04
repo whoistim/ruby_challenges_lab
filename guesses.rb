@@ -1,8 +1,6 @@
+
 def guess mystery_num, guess_count
 	chump_guess = gets.chomp.to_i
-
-
-	def eval_g chump_guess, mystery_num, guess_count
 		guess_count += 1
 		if chump_guess == mystery_num
 			puts"you got it in #{guess_count} tries"
@@ -13,10 +11,6 @@ def guess mystery_num, guess_count
 			puts"The number is lower than #{chump_guess}. Guess Again."
 		end
 		guess mystery_num, guess_count
-	end
-
-eval_g chump_guess, mystery_num, guess_count
-
 end
 
 puts"Guess a number between 1 and 100"
